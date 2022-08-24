@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg"
+    tools:context=".activity.me.InfoActivity">
+
+    <include layout="@layout/ttitle" />
+
+    <LinearLayout
+        android:id="@+id/info_head_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp23"
+            android:layout_weight="1"
+            android:text="头像(可修改)"
+            android:textColor="#b3516193" />
+
+        <ImageView
+            android:id="@+id/info_head"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:src="@drawable/fm_logo" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp22"
+            android:src="@drawable/fm_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp1"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp23"
+            android:layout_weight="1"
+            android:text="个人职位"
+            android:textColor="#b3516193" />
+
+        <TextView
+            android:id="@+id/info_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发工程师"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="6dp"
+            android:layout_height="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp22"
+            android:src="@drawable/fm_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp1"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp23"
+            android:layout_weight="1"
+            android:text="岗位"
+            android:textColor="#b3516193" />
+
+        <TextView
+            android:id="@+id/info_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="研发部"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="6dp"
+            android:layout_height="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp22"
+            android:src="@drawable/fm_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp1"
+        android:background="@color/color_white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp23"
+            android:layout_weight="1"
+            android:text="办公室信息"
+            android:textColor="#b3516193" />
+
+        <TextView
+            android:id="@+id/info_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办公室"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="6dp"
+            android:layout_height="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp22"
+            android:src="@drawable/fm_right" />
+    </LinearLayout>
+
+</LinearLayout>

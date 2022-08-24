@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp1"
+    android:background="@color/color_white"
+    android:paddingLeft="@dimen/dp15"
+    android:paddingTop="@dimen/dp10"
+    android:paddingRight="@dimen/dp15"
+    android:paddingBottom="@dimen/dp10">
+
+    <TextView
+        android:id="@+id/item_one_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginRight="@dimen/dp130"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:lines="2"
+        android:text="标题标题标题标题"
+        android:textColor="@color/color_name"
+        android:textSize="@dimen/sp18" />
+
+    <TextView
+        android:id="@+id/item_one_info_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_one_info_title"
+        android:layout_marginTop="@dimen/dp15"
+        android:text="2020-07-01"
+        android:textSize="@dimen/sp10" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/course_image"
+        android:id="@+id/item_one_info_image"
+        android:layout_width="@dimen/dp110"
+        android:layout_height="@dimen/dp70"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

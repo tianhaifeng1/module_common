@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp10"
+    android:paddingBottom="@dimen/dp10"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="@dimen/dp5"
+    android:layout_marginBottom="@dimen/dp5"
+    android:background="@drawable/r_white_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:textColor="@color/color_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户简称:" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="116"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="@color/color_name" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/sp16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="镁合金"
+            android:textStyle="bold"
+            android:textColor="@color/color_name" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/color_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号:" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="JP-2020-11037"
+            android:textColor="@color/color_name" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="3件"
+            android:textStyle="bold"
+            android:textColor="@color/color_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品名称:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="基座"
+            android:textColor="@color/color_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图号/版本:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="AL8"
+            android:textColor="@color/color_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单交期:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="2021-3-26"
+            android:textColor="@color/color_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前工序:" />
+
+        <TextView
+            android:id="@+id/item_quality_testing_name"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="建模"
+            android:textColor="@color/color_name" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp15"
+            android:id="@+id/rolling_process"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/r_checked_3"
+            android:gravity="center"
+            android:text="执行中"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

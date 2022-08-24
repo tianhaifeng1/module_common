@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_name">
+        <item>上机</item>
+        <item>下机</item>
+        <item>收卡</item>
+        <item>报工</item>
+        <item>质检</item>
+        <item>历史检验</item>
+        <item>工艺图纸</item>
+        <item>品质看板</item>
+        <item>转运</item>
+        <item>wifi</item>
+        <item>蓝牙</item>
+        <item>拍照</item>
+        <item>FNC</item>
+        <item>定位</item>
+        <item>外部链接</item>
+    </string-array>
+
+    <integer-array name="product_icon">
+        <item>@drawable/product_icon1</item>
+        <item>@drawable/product_icon2</item>
+        <item>@drawable/product_icon3</item>
+        <item>@drawable/product_icon4</item>
+        <item>@drawable/checkout_icon1</item>
+        <item>@drawable/warehouse_icon1</item>
+        <item>@drawable/product_icon7</item>
+        <item>@drawable/product_icon8</item>
+        <item>@drawable/product_icon9</item>
+        <item>@drawable/wifi</item>
+        <item>@drawable/bluetooth</item>
+        <item>@drawable/photograph</item>
+        <item>@drawable/nfc</item>
+        <item>@drawable/location</item>
+        <item>@drawable/url</item>
+    </integer-array>
+
+    <string-array name="checkout_name">
+        <item>质检</item>
+    </string-array>
+
+    <integer-array name="checkout_icon">
+        <item>@drawable/checkout_icon1</item>
+    </integer-array>
+
+    <string-array name="warehouse_name">
+        <item>入库</item>
+    </string-array>
+
+    <integer-array name="warehouse_icon">
+        <item>@drawable/warehouse_icon1</item>
+    </integer-array>
+</resources>

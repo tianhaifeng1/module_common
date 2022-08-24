@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context=".activity.homepage.RollingActivity">
+
+    <include layout="@layout/ttitle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rolling_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="#f3f3f3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp45"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp15"
+                    android:text="订单信息"
+                    android:textColor="@color/color_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rolling_infolin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前工序:" />
+
+                    <TextView
+                        android:id="@+id/rolling_process_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="脱蜡"
+                        android:textColor="@color/color_name" />
+
+                    <TextView
+                        android:id="@+id/rolling_process"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:background="@drawable/r_checked_3"
+                        android:gravity="center"
+                        android:text="查看上下游"
+                        android:textColor="@color/color_white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="客户:" />
+
+                    <TextView
+                        android:id="@+id/rolling_client"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="116"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单编号:" />
+
+                    <TextView
+                        android:id="@+id/rolling_nummber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="JP-2020-11037"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卡内件数:" />
+
+                    <TextView
+                        android:id="@+id/rolling_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="50"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品交期:" />
+
+                    <TextView
+                        android:id="@+id/rolling_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="2021-03-30"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="零件名称:" />
+
+                    <TextView
+                        android:id="@+id/rolling_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="壳体"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图号:" />
+
+                    <TextView
+                        android:id="@+id/rolling_figure_nummber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="HYL14-0001"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图纸版本:" />
+
+                    <TextView
+                        android:id="@+id/rolling_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="1.0"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="材质:" />
+
+                    <TextView
+                        android:id="@+id/rolling_texture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="ZM5"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="模组编码:" />
+
+                    <TextView
+                        android:id="@+id/rolling_coding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="L23-250~274"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否首件:" />
+
+                    <TextView
+                        android:id="@+id/rolling_isfirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="否"
+                        android:textColor="@color/color_name" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/rolling_image"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rolling_technology"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="#f3f3f3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp45"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp15"
+                    android:text="工艺要求"
+                    android:textColor="@color/color_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/technology_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/technology_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/black_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/black_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="操作步骤 Operation Procedures"
+                        android:textColor="@color/color_name"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="顺序 Sequence：1"
+                        android:textColor="@color/color_name"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="名称Name：热等静压"
+                        android:textColor="@color/color_name"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="内容 Content："
+                        android:textColor="@color/color_name"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:text="一、热压前准备
+        \n【1】热等静压前铸件需要进行表面处理，通过吹砂和酸洗，去除表面氧化皮、面层、沾污等。
+        \n【2】发现与表面连通的缺陷应补焊封闭。
+        \n【3】工装夹具使用前要吹砂，以去除油污、油脂和外来物或对铸件和热等静压工艺有害的其他玷污。
+        \n【4】使用的氩气应为高纯氩。
+        \n【5】热等静压炉编号：HIP750、HIP850、HIP1250
+        \n二、装炉要求
+        \n【1】同批次产品的化学分析及力学性能试样随铸件一起进行热等静压处理，化学分析及力学性能试样要用铁丝网包裹（严禁散放）。
+        \n【2】试样最低装炉数量：力学性能试棒12根/批。
+        \n【3】当铸件数量较多时，应分多层进行放置，每层热压分层工装上只能放置一层铸件，严禁铸件相互挤压或叠放。
+        \n三、热等静压要求
+        \n【1】铸件按照工艺参数进行热等静压处理。
+        \n四、检验要求
+        \n【1】铸件热等静压后进行目视检查，铸件表面应光亮、无碰伤。"
+                        android:textColor="@color/color_name"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rolling_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp20"
+                android:background="@drawable/r_checked_8"
+                android:gravity="center"
+                android:text="确认收卡"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

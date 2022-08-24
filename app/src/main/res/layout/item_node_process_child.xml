@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp25"
+    android:paddingLeft="@dimen/dp15"
+    android:background="@color/color_white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/item_node_process_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单编号:" />
+
+    <TextView
+        android:id="@+id/item_node_process_child_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:text="JP-2020-11037"
+        android:textColor="@color/color_name" />
+
+</LinearLayout>

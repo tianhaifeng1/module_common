@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qualityshield">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <queries package="${applicationId}">
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBars"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.homepage.WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.homepage.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.homepage.NFCActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.photo.DemoActivity"
+            android:exported="false" />
+        <activity android:name=".activity.homepage.MoreMenuActivity" />
+        <activity android:name=".activity.homepage.TransferListActivity" />
+        <activity android:name=".activity.homepage.TransferActivity" />
+        <activity android:name=".activity.homepage.PaiGongActivity" />
+        <activity android:name=".activity.homepage.TaskBoardActivity" />
+        <activity android:name=".activity.homepage.QualityControlActivity" />
+        <activity android:name=".activity.homepage.WorkSheetActivity" />
+        <activity android:name=".activity.homepage.ImagePagerActivity" />
+        <activity android:name=".activity.homepage.QualityTestingToActivity" />
+        <activity android:name=".activity.homepage.QualityTestingActivity" />
+        <activity android:name=".activity.homepage.ProcessListActivity" />
+        <activity android:name=".activity.homepage.RollingActivity" />
+        <activity android:name=".activity.me.SettingActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.message.MessageActivity" />
+        <activity android:name=".activity.me.BluetoothActivity" />
+        <activity android:name=".activity.commission.CommissionDetailsActivity" />
+        <activity android:name=".activity.me.InfoActivity" />
+        <activity android:name=".activity.me.FeedbackActivity" />
+        <activity android:name=".activity.me.UpdatePwdActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.MainNavActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.VisitorNavActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Wclcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

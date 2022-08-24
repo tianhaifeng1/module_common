@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:text="标题"
+            android:textColor="@color/color_name"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容："
+                android:textColor="@color/color_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容内容内容内容内容内容内容内容内容" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间："
+                android:textColor="@color/color_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间:2021-3-22 17:15:10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态："
+                android:textColor="@color/color_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="执行中"
+                android:textColor="@color/tab_checked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起人："
+                android:textColor="@color/color_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="小明"
+                android:textColor="@color/tab_checked" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:id="@+id/fm_commission_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="#f7f7f7"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/show_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp10"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="请输入审批或驳回内容"
+            android:maxLength="200"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/show_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp11"
+            android:layout_marginBottom="@dimen/dp9"
+            android:text="0/200"
+            android:textSize="12sp" />
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/r_white_10_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:text="审批"
+                android:background="@drawable/submit_btn"
+                android:layout_width="@dimen/dp110"
+                android:layout_height="@dimen/dp40"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:text="驳回"
+                android:background="@drawable/r_red_20"
+                android:layout_width="@dimen/dp110"
+                android:layout_height="@dimen/dp40"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

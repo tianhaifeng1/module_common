@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/dp13"
+    android:layout_marginBottom="@dimen/dp13">
+
+    <TextView
+        android:id="@+id/item_complaint_title"
+        android:background="@drawable/r_gray_f7f7f7"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp33"
+        android:text="认证问题"
+        android:textColor="@color/black_800000" />
+
+</LinearLayout>

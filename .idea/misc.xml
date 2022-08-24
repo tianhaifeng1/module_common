@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/activity_login.xml" value="0.18059777102330293" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_fm_four.xml" value="0.18059777102330293" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_fm_one.xml" value="0.18059777102330293" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_fm_two.xml" value="0.18059777102330293" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_fm_visitor.xml" value="0.225" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_home.xml" value="0.3567708333333333" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/fragment_work_bench.xml" value="0.3567708333333333" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/layout/item_commission.xml" value="0.225" />
+        <entry key="..\:/android/F-App/生产管控系统/QualityShield/app/src/main/res/menu/navigation_main.xml" value="0.225" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/black_line.xml" value="0.2135" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_blue_num_normal.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_blue_num_selected.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_blue_num_selector.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_custom_selector.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_only_album_bg.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_permission_desc_bg.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_preview_blue_num_selected.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_preview_blue_num_selector.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_preview_grey_oval_normal.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_transparent_bg.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/drawable/ps_demo_white_preview_selector.xml" value="0.1845" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_bluetooth.xml" value="0.20104166666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_commission_details.xml" value="0.36614583333333334" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_demo.xml" value="0.20104166666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_location.xml" value="0.21875" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_login.xml" value="0.2203125" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_more_menu.xml" value="0.15806159420289856" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_nfcactivity.xml" value="0.225" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_pai_gong.xml" value="0.225" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_register.xml" value="0.2203125" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_rolling.xml" value="0.20104166666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/activity_web.xml" value="0.19270833333333334" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/fragment_fm_four.xml" value="0.15806159420289856" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/fragment_home.xml" value="0.15806159420289856" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/fragment_work_bench.xml" value="0.2203125" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/gv_filter_image.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_commission.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_complaint.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_fm_menu.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_message.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_module_child.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_node_process.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_node_process_child.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_pop_brand.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_quality_control.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_quality_testing.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_task_board.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/item_technology.xml" value="0.358695652173913" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/layout_number.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/layout_technology.xml" value="0.2203125" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/layout_video_number.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_album_folder_item.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_complete_selected_layout.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_fragment_preview.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_fragment_selector.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_item_grid_audio.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_item_grid_image.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_item_grid_video.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_preview_image.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/app/src/main/res/layout/ps_custom_preview_video.xml" value="0.20885416666666667" />
+        <entry key="..\:/android/QualityShield/module_common/src/main/res/layout/ttitle.xml" value="0.20885416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

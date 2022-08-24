@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/technology_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/technology_rv"
+        android:background="@drawable/black_line"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/black_line"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:textColor="@color/color_name"
+            android:textStyle="bold"
+            android:text="操作步骤 Operation Procedures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:padding="@dimen/dp5"
+            android:textSize="12sp"
+            android:textColor="@color/color_name"
+            android:text="顺序 Sequence：1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:padding="@dimen/dp5"
+            android:textSize="12sp"
+            android:textColor="@color/color_name"
+            android:text="名称Name：热等静压"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:textSize="12sp"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/color_name"
+            android:text="内容 Content："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:textSize="12sp"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/color_name"
+            android:text="一、热压前准备
+        \n【1】热等静压前铸件需要进行表面处理，通过吹砂和酸洗，去除表面氧化皮、面层、沾污等。
+        \n【2】发现与表面连通的缺陷应补焊封闭。
+        \n【3】工装夹具使用前要吹砂，以去除油污、油脂和外来物或对铸件和热等静压工艺有害的其他玷污。
+        \n【4】使用的氩气应为高纯氩。
+        \n【5】热等静压炉编号：HIP750、HIP850、HIP1250
+        \n二、装炉要求
+        \n【1】同批次产品的化学分析及力学性能试样随铸件一起进行热等静压处理，化学分析及力学性能试样要用铁丝网包裹（严禁散放）。
+        \n【2】试样最低装炉数量：力学性能试棒12根/批。
+        \n【3】当铸件数量较多时，应分多层进行放置，每层热压分层工装上只能放置一层铸件，严禁铸件相互挤压或叠放。
+        \n三、热等静压要求
+        \n【1】铸件按照工艺参数进行热等静压处理。
+        \n四、检验要求
+        \n【1】铸件热等静压后进行目视检查，铸件表面应光亮、无碰伤。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
