@@ -13,8 +13,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/module_common" />
-            <option value="$PROJECT_DIR$/sample-loader" />
-            <option value="$PROJECT_DIR$/sample-runtime" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -58,7 +58,7 @@ public class LocationActivity extends OfficialMVPActivity<HomeView, HomePresente
         titleModule.setTitleBackground(R.color.tab_checked);
         titleModule.setBackImage(R.mipmap.ic_back_white);
 
-        locationListener = location -> mBinding.locationText.setText("经度："+location.getLongitude()+",纬度："+location.getLatitude());
+        LocationListener locationListener = location -> mBinding.locationText.setText("经度："+location.getLongitude()+",纬度："+location.getLatitude());
     }
 
     @Override

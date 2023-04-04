@@ -35,12 +35,14 @@ public class WebActivity extends OfficialMVPActivity<HomeView, HomePresenter, Ac
         titleModule.setTitleBackground(R.color.tab_checked);
         titleModule.setBackImage(R.mipmap.ic_back_white);
 
+        String url = getIntent().getStringExtra("url");
+
         mAgentWeb = AgentWeb.with(this)
                 .setAgentWebParent((LinearLayout) mBinding.webLin, new LinearLayout.LayoutParams(-1, -1))
                 .useDefaultIndicator()
                 .createAgentWeb()
                 .ready()
-                .go("https://www.baidu.com/");
+                .go(url);
 
 //        mAgentWeb.getJsInterfaceHolder().addJavaObject("test",new AndroidtoJs());
     }

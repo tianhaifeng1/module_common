@@ -1,11 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.shadow_version = '2.2.1'
     repositories {
         google()
         jcenter()
-        mavenCentral(){ url'http://maven.aliyun.com/nexus/content/groups/public/'}
-        maven {url 'https://developer.huawei.com/repo/'}
+        mavenCentral() { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
@@ -19,8 +18,8 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {url 'https://jitpack.io'}
-        maven {url 'https://developer.huawei.com/repo/'}
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
 }
 

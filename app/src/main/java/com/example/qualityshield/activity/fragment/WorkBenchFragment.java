@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -236,7 +237,10 @@ public class WorkBenchFragment extends OfficialMVPFragment implements View.OnCli
                 activity.skipActivity(LocationActivity.class);
             } else if(menuBean.getMenuName().equals("外部链接")) {
                 //web
-                activity.skipActivity(WebActivity.class);
+                Intent intent = new Intent(activity, WebActivity.class);
+                intent.putExtra("url","https://www.baidu.com");
+//                StartActivity(intent)
+                activity.skipActivity(intent);
             }
         });
         mBinding.fmOneProductionRv.setAdapter(menuAdapter1);
