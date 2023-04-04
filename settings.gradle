@@ -1,3 +1,5 @@
 include ':app'
 rootProject.name = "QualityShield"
 include ':module_common'
+include ':sample-runtime'
+include ':sample-loader'

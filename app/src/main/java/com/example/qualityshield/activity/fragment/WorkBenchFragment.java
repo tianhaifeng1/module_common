@@ -23,6 +23,7 @@ import com.example.module_common.official.OfficialMVPFragment;
 import com.example.module_common.util.GlideUtile;
 import com.example.qualityshield.R;
 import com.example.qualityshield.activity.LoginActivity;
+import com.example.qualityshield.activity.MainActivity;
 import com.example.qualityshield.activity.MainNavActivity;
 import com.example.qualityshield.activity.adapter.MenuAdapter;
 import com.example.qualityshield.activity.homepage.LocationActivity;
@@ -250,7 +251,6 @@ public class WorkBenchFragment extends OfficialMVPFragment implements View.OnCli
         menuAdapter2.setOnItemClickListener((adapter, view, position) -> {
             MenuBean menuBean = (MenuBean) adapter.getData().get(position);
             if (menuBean.getMenuName().equals("质检")) {
-
             }
         });
         mBinding.fmOneCheckoutRv.setAdapter(menuAdapter2);

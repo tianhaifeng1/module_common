@@ -22,7 +22,7 @@ public class MainNavActivity extends NavBottomActivity {
     protected void initView() {
         super.initView();
 
-//        smoothScroll = true;
+        smoothScroll = true;
     }
 
     @Override

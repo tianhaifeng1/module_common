@@ -74,7 +74,7 @@ dependencies {
 
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.7'
 
-    api 'com.contrarywind:Android-PickerView:4.1.9'
+//    api 'com.contrarywind:Android-PickerView:4.1.9'
 
     api 'androidx.multidex:multidex:2.0.1'
 

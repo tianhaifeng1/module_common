@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.tencent.shadow.plugin'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.tencent.shadow.sample.loader"//applicationId不重要
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.create("release")
+            signingConfig.initWith(buildTypes.debug.signingConfig)
+        }
+    }
+}
+
+dependencies {
+    implementation "com.tencent.shadow.dynamic:loader-impl:$shadow_version"
+
+    compileOnly "com.tencent.shadow.core:activity-container:$shadow_version"
+    compileOnly "com.tencent.shadow.core:common:$shadow_version"
+    //下面这行依赖是为了防止在proguard的时候找不到LoaderFactory接口
+    compileOnly "com.tencent.shadow.dynamic:host:$shadow_version"
+}
+
+//这段buildscript配置的dependencies是为了apply plugin: 'com.tencent.shadow.plugin'能找到实现
+buildscript {
+    repositories {
+        if (!System.getenv().containsKey("DISABLE_TENCENT_MAVEN_MIRROR")) {
+            maven { url 'https://mirrors.tencent.com/nexus/repository/maven-public/' }
+        } else {
+            google()
+            mavenCentral()
+        }
+        maven {
+            name = "GitHubPackages"
+            url "https://maven.pkg.github.com/tencent/shadow"
+            //一个只读账号兼容Github Packages暂时不支持匿名下载
+            //https://github.community/t/download-from-github-package-registry-without-authentication/14407
+            credentials {
+                username = 'readonlypat'
+                password = '\u0067hp_s3VOOZnLf1bTyvHWblPfaessrVYyEU4JdNbs'
+            }
+        }
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath "com.tencent.shadow.core:gradle-plugin:$shadow_version"
+    }
+}
+
+shadow {
+    packagePlugin {
+        pluginTypes {
+            debug {
+                loaderApkConfig = new Tuple2('sample-loader-debug.apk', ':sample-loader:assembleDebug')
+                runtimeApkConfig = new Tuple2('sample-runtime-debug.apk', ':sample-runtime:assembleDebug')
+                pluginApks {
+                    pluginApk1 {
+                        businessName = 'demo'//businessName相同的插件，context获取的Dir是相同的。businessName留空，表示和宿主相同业务，直接使用宿主的Dir。
+                        partKey = 'demo'
+                        buildTask = 'assemblePluginDebug'
+                        apkName = 'test-plugin-debug.apk'
+                        apkPath = 'test/build/outputs/apk/plugin/debug/test-plugin-debug.apk'
+                    }
+                }
+            }
+
+            release {
+                loaderApkConfig = new Tuple2('sample-loader-release.apk', ':sample-loader:assembleRelease')
+                runtimeApkConfig = new Tuple2('sample-runtime-release.apk', ':sample-runtime:assembleRelease')
+                pluginApks {
+                    pluginApk1 {
+                        businessName = 'demo'
+                        partKey = 'demo'
+                        buildTask = 'assemblePluginRelease'
+                        apkName = 'test-plugin-release.apk'
+                        apkPath = 'test/build/outputs/apk/plugin/release/test-plugin-release.apk'
+                    }
+                }
+            }
+        }
+
+        loaderApkProjectPath = 'sample-loader'
+
+        runtimeApkProjectPath = 'sample-runtime'
+
+        version = 1
+        compactVersion = [1, 2, 3]
+        uuidNickName = "1.1.0"
+
+        //配置完成后as工作台使用命令行进行打包，打包文件在项目根目录build下，至此 插件完成制作
+        // ./gradlew packageDebugPlugin
+
+    }
+}

@@ -30,7 +30,7 @@
         android:name="android.hardware.nfc"
         android:required="true" />
 
-    <queries package="${applicationId}">
+    <queries package="com.example.qualityshield">
         <intent>
             <action android:name="android.media.action.IMAGE_CAPTURE" />
         </intent>

@@ -107,18 +107,7 @@ public class ModuleUtils {
      */
     @SuppressLint("MissingPermission")
     public static void startLocation(Activity activity, LocationListener locationListener) {
-        alm = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
-        List<String> providerList = alm.getProviders(true);
-        if (providerList.contains(LocationManager.NETWORK_PROVIDER)) { //网络提供器
-            provider = LocationManager.NETWORK_PROVIDER;
-        } else if (provider.contains(LocationManager.GPS_PROVIDER)) { //GPS提供器
-            provider = LocationManager.GPS_PROVIDER;
-        } else {
-            ToastUtils.showShort("请开启GPS");
-            Intent intent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
-            activity.startActivityForResult(intent, 0); //此为设置完成后返回到获取界面
-            return;
-        }
+
 
         String[] requestAll = {
                 Manifest.permission.ACCESS_FINE_LOCATION,
@@ -132,6 +121,19 @@ public class ModuleUtils {
                     @Override
                     public void hasPermission(List<String> granted, boolean isAll) {
                         if (isAll) {
+                            alm = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
+                            List<String> providerList = alm.getProviders(true);
+                            if (providerList.contains(LocationManager.NETWORK_PROVIDER)) { //网络提供器
+                                provider = LocationManager.NETWORK_PROVIDER;
+                            } else if (provider.contains(LocationManager.GPS_PROVIDER)) { //GPS提供器
+                                provider = LocationManager.GPS_PROVIDER;
+                            } else {
+                                ToastUtils.showShort("请开启GPS");
+                                Intent intent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
+                                activity.startActivityForResult(intent, 0); //此为设置完成后返回到获取界面
+                                return;
+                            }
+
                             Location location = alm.getLastKnownLocation(provider); // 通过GPS获取位置
                             EventBus.getDefault().post(new LocationModel(location));
                             if (locationListener != null) {
