@@ -169,7 +169,7 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
-            <com.qmuiteam.qmui.layout.QMUILinearLayout
+            <LinearLayout
                 android:id="@+id/conmplaint_context_lin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                     android:layout_marginBottom="@dimen/dp9"
                     android:text="0/200"
                     android:textSize="12sp" />
-            </com.qmuiteam.qmui.layout.QMUILinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -232,25 +232,6 @@
                         android:textColor="#2a3344"
                         android:textSize="16sp" />
                 </LinearLayout>
-
-                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
-                    android:id="@+id/settled_add_photos"
-                    style="@style/WrapWrap"
-                    android:layout_marginLeft="@dimen/dp23"
-                    android:layout_marginTop="@dimen/dp10"
-                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
-                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
-                    app:bga_snpl_editable="true"
-                    app:bga_snpl_itemCornerRadius="0dp"
-                    app:bga_snpl_itemSpanCount="3"
-                    app:bga_snpl_itemWhiteSpacing="4dp"
-                    app:bga_snpl_itemWidth="0dp"
-                    app:bga_snpl_maxItemCount="9"
-                    app:bga_snpl_otherWhiteSpacing="100dp"
-                    app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
-                    app:bga_snpl_plusDrawable="@mipmap/bga_pp_ic_plus"
-                    app:bga_snpl_plusEnable="true"
-                    app:bga_snpl_sortable="true" />
             </LinearLayout>
 
             <TextView

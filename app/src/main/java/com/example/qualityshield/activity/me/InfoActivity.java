@@ -16,8 +16,6 @@ import com.example.qualityshield.databinding.ActivityInfoBinding;
 
 import java.io.File;
 
-import cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity;
-
 public class InfoActivity extends OfficialMVPActivity<HomeView, HomePresenter, ActivityInfoBinding> {
 
     @Override
@@ -41,14 +39,6 @@ public class InfoActivity extends OfficialMVPActivity<HomeView, HomePresenter, A
         mBinding.infoHeadLin.setOnClickListener(v -> {
             // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话就没有拍照功能
             File takePhotoDir1 = new File(Environment.getExternalStorageDirectory(), "BGAPhotoPickerTakePhoto");
-
-            Intent photoPickerIntent1 = new BGAPhotoPickerActivity.IntentBuilder(this)
-                    .cameraFileDir(takePhotoDir1) // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话则不开启图库里的拍照功能
-                    .maxChooseCount(1) // 图片选择张数的最大值
-                    .selectedPhotos(null) // 当前已选中的图片路径集合
-                    .pauseOnScroll(false) // 滚动列表时是否暂停加载图片
-                    .build();
-            startActivityForResult(photoPickerIntent1, 100);
         });
 
         initData();
@@ -64,18 +54,4 @@ public class InfoActivity extends OfficialMVPActivity<HomeView, HomePresenter, A
         //获取个人信息
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case 100:
-                    // 结果回调
-                    GlideUtile.bindImageViewRound(context, BGAPhotoPickerActivity.getSelectedPhotos(data).get(0), mBinding.infoHead);
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
 }

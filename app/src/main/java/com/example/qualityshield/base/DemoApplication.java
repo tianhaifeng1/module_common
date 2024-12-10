@@ -65,6 +65,5 @@ public class DemoApplication extends InitApplication {
                 return new ClassicsFooter(context).setDrawableSize(20);
             }
         });
-
     }
 }

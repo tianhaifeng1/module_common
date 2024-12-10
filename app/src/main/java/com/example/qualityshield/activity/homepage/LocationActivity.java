@@ -24,14 +24,6 @@ import com.example.qualityshield.activity.HomePresenter;
 import com.example.qualityshield.activity.HomeView;
 import com.example.module_common.official.OfficialMVPActivity;
 import com.example.qualityshield.databinding.ActivityLocationBinding;
-import com.hjq.permissions.OnPermission;
-import com.hjq.permissions.XXPermissions;
-
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
-
-import java.util.List;
 
 public class LocationActivity extends OfficialMVPActivity<HomeView, HomePresenter, ActivityLocationBinding> {
 

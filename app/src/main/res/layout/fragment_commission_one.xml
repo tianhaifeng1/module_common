@@ -101,7 +101,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.qmuiteam.qmui.layout.QMUILinearLayout
+    <LinearLayout
         android:id="@+id/fm_commission_lin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             android:layout_marginBottom="@dimen/dp9"
             android:text="0/200"
             android:textSize="12sp" />
-    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="@dimen/dp8"

@@ -20,7 +20,7 @@ import androidx.core.app.ActivityCompat;
 import com.blankj.utilcode.util.ToastUtils;
 import com.example.module_common.R;
 import com.example.module_common.model.LocationModel;
-import com.hjq.permissions.OnPermission;
+import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.XXPermissions;
 import com.huawei.hms.hmsscankit.ScanUtil;
 
@@ -49,22 +49,21 @@ public class ModuleUtils {
                 Manifest.permission.CAMERA
         };
         XXPermissions.with(activity)
-                .constantRequest()
                 .permission(requestAll)
-                .request(new OnPermission() {
+                .request(new OnPermissionCallback() {
                     @Override
-                    public void hasPermission(List<String> granted, boolean isAll) {
-                        if (isAll) {
+                    public void onGranted(@NonNull List<String> permissions, boolean allGranted) {
+                        if (allGranted) {
                             ScanUtil.startScan(activity, requestCode, null);
                         }
                     }
 
                     @Override
-                    public void noPermission(List<String> denied, boolean quick) {
-                        if (quick) {
+                    public void onDenied(@NonNull List<String> permissions, boolean doNotAskAgain) {
+                        if (doNotAskAgain) {
                             ToastUtils.showShort("请选择'" + activity.getResources().getString(R.string.app_name) + "'程序，点击进行手动授予权限");
                             //如果是被永久拒绝就跳转到应用权限系统设置页面
-                            XXPermissions.gotoPermissionSettings(activity);
+                            XXPermissions.startPermissionActivity(activity);
                         } else {
                             ToastUtils.showShort("禁止权限有可能影响APP正常运行");
                         }
@@ -114,13 +113,13 @@ public class ModuleUtils {
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.INTERNET
         };
+
         XXPermissions.with(activity)
-                .constantRequest()
                 .permission(requestAll)
-                .request(new OnPermission() {
+                .request(new OnPermissionCallback() {
                     @Override
-                    public void hasPermission(List<String> granted, boolean isAll) {
-                        if (isAll) {
+                    public void onGranted(@NonNull List<String> permissions, boolean allGranted) {
+                        if (allGranted) {
                             alm = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
                             List<String> providerList = alm.getProviders(true);
                             if (providerList.contains(LocationManager.NETWORK_PROVIDER)) { //网络提供器
@@ -145,11 +144,11 @@ public class ModuleUtils {
                     }
 
                     @Override
-                    public void noPermission(List<String> denied, boolean quick) {
-                        if (quick) {
+                    public void onDenied(@NonNull List<String> permissions, boolean doNotAskAgain) {
+                        if (doNotAskAgain) {
                             ToastUtils.showShort("请选择'" + activity.getResources().getString(R.string.app_name) + "'程序，点击进行手动授予权限");
                             //如果是被永久拒绝就跳转到应用权限系统设置页面
-                            XXPermissions.gotoPermissionSettings(activity);
+                            XXPermissions.startPermissionActivity(activity);
                         } else {
                             ToastUtils.showShort("禁止权限有可能影响APP正常运行");
                         }

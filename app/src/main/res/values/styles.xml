@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBars" parent="QMUI.Compat">
+    <style name="AppTheme.NoActionBars">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:textViewStyle">@style/MyTextViewStyle</item>
@@ -16,7 +16,7 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
-    <style name="AppTheme.Wclcome" parent="QMUI.Compat">
+    <style name="AppTheme.Wclcome">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:textViewStyle">@style/MyTextViewStyle</item>

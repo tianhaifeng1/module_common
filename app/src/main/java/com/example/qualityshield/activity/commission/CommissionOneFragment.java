@@ -13,9 +13,7 @@ import androidx.annotation.Nullable;
 
 import com.example.module_common.mvp.TPresenter;
 import com.example.module_common.official.OfficialMVPFragment;
-import com.example.qualityshield.R;
 import com.example.qualityshield.databinding.FragmentCommissionOneBinding;
-import com.qmuiteam.qmui.layout.QMUILinearLayout;
 
 
 public class CommissionOneFragment extends OfficialMVPFragment {
@@ -34,7 +32,6 @@ public class CommissionOneFragment extends OfficialMVPFragment {
 
     @Override
     protected void initFragmentView(View view) {
-        mBinding.fmCommissionLin.setRadius(15);
 
         TextChange textChange = new TextChange();
         mBinding.showEdit.addTextChangedListener(textChange);

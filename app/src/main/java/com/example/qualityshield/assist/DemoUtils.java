@@ -10,14 +10,9 @@ import android.text.style.RelativeSizeSpan;
 import android.view.View;
 
 import com.blankj.utilcode.util.LogUtils;
-import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.entity.node.BaseNode;
-import com.example.qualityshield.R;
 import com.example.qualityshield.bean.ProcessListBean;
 import com.example.qualityshield.bean.TechnologyBean;
-import com.hjq.permissions.OnPermission;
-import com.hjq.permissions.XXPermissions;
-import com.huawei.hms.hmsscankit.ScanUtil;
 
 import java.io.File;
 import java.text.DecimalFormat;

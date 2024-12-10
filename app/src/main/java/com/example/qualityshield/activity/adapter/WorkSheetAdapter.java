@@ -1,6 +1,7 @@
 package com.example.qualityshield.activity.adapter;
 
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
@@ -9,7 +10,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.example.module_common.util.GlideUtile;
 import com.example.qualityshield.R;
-import com.qmuiteam.qmui.layout.QMUIRelativeLayout;
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ public class WorkSheetAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
     protected void convert(BaseViewHolder helper, String item) {
         int width = (ScreenUtils.getScreenWidth() - 15) / 2;
         double height = width * 0.8;
-        QMUIRelativeLayout relativeLayout = helper.getView(R.id.work_sheet_rel);
+        LinearLayout relativeLayout = helper.getView(R.id.work_sheet_rel);
         ViewGroup.LayoutParams params = relativeLayout.getLayoutParams();
         params.width = width;
         params.height = (int) height;

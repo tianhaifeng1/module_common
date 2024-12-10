@@ -42,23 +42,16 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     testImplementation 'junit:junit:4.12'
     api project(path: ':module_common')
+    api project(path: ':photo-library')
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation 'com.ljx.rxlife:rxlife-coroutine:2.0.1'
+    implementation 'io.github.youth5201314:banner:2.2.3'
 
-    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
+    implementation  'io.github.scwang90:refresh-layout-kernel:3.0.0-alpha'      //核心必须依赖
+    implementation  'io.github.scwang90:refresh-header-classics:3.0.0-alpha'    //经典刷新头
+    implementation  'io.github.scwang90:refresh-footer-classics:3.0.0-alpha'    //经典加载
 
-    implementation 'com.youth.banner:banner:2.1.0'
-
-    implementation 'cn.bingoogolapple:bga-photopicker:2.0.2@aar'
-    implementation 'cn.bingoogolapple:bga-baseadapter:2.0.0@aar'
-
-    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
-    implementation 'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
-    implementation 'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载
-
-    implementation 'com.bm.photoview:library:1.4.1'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
     implementation "com.google.android.exoplayer:exoplayer:2.18.0"
     implementation "com.squareup.picasso:picasso:2.71828"

@@ -59,7 +59,7 @@ dependencies {
 
     api 'com.github.chrisbanes:PhotoView:2.3.0'
 
-    api 'com.blankj:utilcodex:1.30.6'
+    api 'com.blankj:utilcodex:1.31.1'
 
 //    api 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
 //    api 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
@@ -80,7 +80,7 @@ dependencies {
 
     api 'org.greenrobot:eventbus:3.1.1'
 
-    api 'com.hjq:xxpermissions:5.0'
+    api 'com.github.getActivity:XXPermissions:20.0'
 
     // PictureSelector 基础 (必须)
     api 'io.github.lucksiege:pictureselector:v3.10.5'
@@ -96,7 +96,6 @@ dependencies {
 
     api 'com.huawei.hms:scanplus:1.2.3.300'
 
-    api 'com.just.agentweb:agentweb:4.1.4' // (必选)
-    api 'com.just.agentweb:filechooser:4.1.4'// (可选)
-    api 'com.download.library:Downloader:4.1.4'// (可选)
+    api 'io.github.justson:agentweb-core:v5.1.1-androidx'
+    api 'io.github.justson:agentweb-filechooser:v5.1.1-androidx' // (可选)
 }
