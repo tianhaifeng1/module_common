@@ -1,7 +1,7 @@
 # 插件使用介绍
 
 #  插件接入  
-`api 'com.github.tianhaifeng1:module_common:1.0.5'`  
+`api 'com.github.tianhaifeng1:module_common:1.0.6'`  
 
 ## 1.扫码接入
 调用代码
